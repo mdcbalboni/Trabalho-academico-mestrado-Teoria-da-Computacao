@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="Buffer">
+<graphics>
+<position x="285.0" y="165.0"/>
+</graphics>
+<name>
+<value>Buffer</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Buffer vazio">
+<graphics>
+<position x="735.0" y="105.0"/>
+</graphics>
+<name>
+<value>Buffer vazio</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Liberação da M1">
+<graphics>
+<position x="435.0" y="165.0"/>
+</graphics>
+<name>
+<value>Liberação da M1</value>
+<graphics>
+<offset x="115.0" y="26.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Liberação da M2">
+<graphics>
+<position x="435.0" y="495.0"/>
+</graphics>
+<name>
+<value>Liberação da M2</value>
+<graphics>
+<offset x="113.0" y="44.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Liberado para novo produto">
+<graphics>
+<position x="750.0" y="345.0"/>
+</graphics>
+<name>
+<value>Liberado para novo produto</value>
+<graphics>
+<offset x="86.0" y="-22.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1">
+<graphics>
+<position x="135.0" y="240.0"/>
+</graphics>
+<name>
+<value>M1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1 em manutenção">
+<graphics>
+<position x="345.0" y="45.0"/>
+</graphics>
+<name>
+<value>M1 em manutenção</value>
+<graphics>
+<offset x="72.0" y="-6.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1 funcionando">
+<graphics>
+<position x="165.0" y="45.0"/>
+</graphics>
+<name>
+<value>M1 funcionando</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M2">
+<graphics>
+<position x="135.0" y="465.0"/>
+</graphics>
+<name>
+<value>M2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P1 em espera">
+<graphics>
+<position x="480.0" y="15.0"/>
+</graphics>
+<name>
+<value>P1 em espera</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P1 pronta">
+<graphics>
+<position x="540.0" y="300.0"/>
+</graphics>
+<name>
+<value>P1 pronta</value>
+<graphics>
+<offset x="75.0" y="-5.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P2 pronta">
+<graphics>
+<position x="540.0" y="405.0"/>
+</graphics>
+<name>
+<value>P2 pronta</value>
+<graphics>
+<offset x="72.0" y="45.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Robo">
+<graphics>
+<position x="300.0" y="345.0"/>
+</graphics>
+<name>
+<value>Robo</value>
+<graphics>
+<offset x="29.0" y="-17.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Robo Livre">
+<graphics>
+<position x="90.0" y="345.0"/>
+</graphics>
+<name>
+<value>Robo Livre</value>
+<graphics>
+<offset x="-3.0" y="30.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="Arrumou M1">
+<graphics>
+<position x="255.0" y="45.0"/>
+</graphics>
+<name>
+<value>Arrumou M1</value>
+<graphics>
+<offset x="41.0" y="40.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Carga do Buffer">
+<graphics>
+<position x="345.0" y="225.0"/>
+</graphics>
+<name>
+<value>Carga do Buffer</value>
+<graphics>
+<offset x="18.0" y="23.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Carga sem problema">
+<graphics>
+<position x="225.0" y="240.0"/>
+</graphics>
+<name>
+<value>Carga sem problema</value>
+<graphics>
+<offset x="41.0" y="40.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Carrega p2">
+<graphics>
+<position x="255.0" y="465.0"/>
+</graphics>
+<name>
+<value>Carrega p2</value>
+<graphics>
+<offset x="39.0" y="40.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Coloca em espera">
+<graphics>
+<position x="240.0" y="180.0"/>
+</graphics>
+<name>
+<value>Coloca em espera</value>
+<graphics>
+<offset x="12.0" y="31.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Colocar peça no buffer">
+<graphics>
+<position x="420.0" y="105.0"/>
+</graphics>
+<name>
+<value>Colocar peça no buffer</value>
+<graphics>
+<offset x="-6.0" y="36.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Descarga P1">
+<graphics>
+<position x="435.0" y="300.0"/>
+</graphics>
+<name>
+<value>Descarga P1</value>
+<graphics>
+<offset x="7.0" y="16.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Descarrega p2">
+<graphics>
+<position x="435.0" y="360.0"/>
+</graphics>
+<name>
+<value>Descarrega p2</value>
+<graphics>
+<offset x="-2.0" y="20.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Deu problema">
+<graphics>
+<position x="135.0" y="165.0"/>
+</graphics>
+<name>
+<value>Deu problema</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="M3 finaliza o produto">
+<graphics>
+<position x="630.0" y="345.0"/>
+</graphics>
+<name>
+<value>M3 finaliza o produto</value>
+<graphics>
+<offset x="97.0" y="51.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Novo produto">
+<graphics>
+<position x="900.0" y="345.0"/>
+</graphics>
+<name>
+<value>Novo produto</value>
+<graphics>
+<offset x="0.0" y="31.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Arrumou M1 to M1 funcionando" source="Arrumou M1" target="M1 funcionando">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="261" y="57" curvePoint="false"/>
+<arcpath id="001" x="191" y="57" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Buffer to Carga do Buffer" source="Buffer" target="Carga do Buffer">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="307" y="187" curvePoint="false"/>
+<arcpath id="001" x="352" y="232" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Buffer vazio to Colocar peça no buffer" source="Buffer vazio" target="Colocar peça no buffer">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="732" y="117" curvePoint="false"/>
+<arcpath id="001" x="436" y="122" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carga do Buffer to Buffer vazio" source="Carga do Buffer" target="Buffer vazio">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="361" y="242" curvePoint="false"/>
+<arcpath id="001" x="628" y="208" curvePoint="false"/>
+<arcpath id="002" x="735" y="126" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carga do Buffer to Liberação da M1" source="Carga do Buffer" target="Liberação da M1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="362" y="232" curvePoint="false"/>
+<arcpath id="001" x="434" y="185" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carga do Buffer to Robo" source="Carga do Buffer" target="Robo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="357" y="252" curvePoint="false"/>
+<arcpath id="001" x="317" y="343" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carga sem problema to Liberação da M1" source="Carga sem problema" target="Liberação da M1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="242" y="247" curvePoint="false"/>
+<arcpath id="001" x="432" y="181" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carga sem problema to Robo" source="Carga sem problema" target="Robo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="241" y="257" curvePoint="false"/>
+<arcpath id="001" x="303" y="344" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carrega p2 to Liberação da M2" source="Carrega p2" target="Liberação da M2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="271" y="477" curvePoint="false"/>
+<arcpath id="001" x="432" y="504" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Carrega p2 to Robo" source="Carrega p2" target="Robo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="267" y="462" curvePoint="false"/>
+<arcpath id="001" x="306" y="370" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Coloca em espera to M1 em manutenção" source="Coloca em espera" target="M1 em manutenção">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="257" y="184" curvePoint="false"/>
+<arcpath id="001" x="347" y="68" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Coloca em espera to P1 em espera" source="Coloca em espera" target="P1 em espera">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="256" y="198" curvePoint="false"/>
+<arcpath id="001" x="479" y="35" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Colocar peça no buffer to Buffer" source="Colocar peça no buffer" target="Buffer">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="426" y="117" curvePoint="false"/>
+<arcpath id="001" x="310" y="170" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Descarga P1 to P1 pronta" source="Descarga P1" target="P1 pronta">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="451" y="312" curvePoint="false"/>
+<arcpath id="001" x="537" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Descarga P1 to Robo Livre" source="Descarga P1" target="Robo Livre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="442" y="307" curvePoint="false"/>
+<arcpath id="001" x="403" y="268" curvePoint="false"/>
+<arcpath id="002" x="116" y="352" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Descarrega p2 to P2 pronta" source="Descarrega p2" target="P2 pronta">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="451" y="372" curvePoint="false"/>
+<arcpath id="001" x="538" y="410" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Descarrega p2 to Robo Livre" source="Descarrega p2" target="Robo Livre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="441" y="377" curvePoint="false"/>
+<arcpath id="001" x="343" y="448" curvePoint="false"/>
+<arcpath id="002" x="116" y="362" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Deu problema to M1" source="Deu problema" target="M1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="147" y="192" curvePoint="false"/>
+<arcpath id="001" x="147" y="237" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Deu problema to M1 em manutenção" source="Deu problema" target="M1 em manutenção">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="151" y="177" curvePoint="false"/>
+<arcpath id="001" x="344" y="64" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Liberação da M1 to Descarga P1" source="Liberação da M1" target="Descarga P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="447" y="191" curvePoint="false"/>
+<arcpath id="001" x="447" y="297" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Liberação da M2 to Descarrega p2" source="Liberação da M2" target="Descarrega p2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="447" y="492" curvePoint="false"/>
+<arcpath id="001" x="447" y="387" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Liberado para novo produto to Novo produto" source="Liberado para novo produto" target="Novo produto">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="776" y="357" curvePoint="false"/>
+<arcpath id="001" x="906" y="357" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 em manutenção to Arrumou M1" source="M1 em manutenção" target="Arrumou M1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="342" y="57" curvePoint="false"/>
+<arcpath id="001" x="271" y="57" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 em manutenção to Coloca em espera" source="M1 em manutenção" target="Coloca em espera">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="348" y="69" curvePoint="false"/>
+<arcpath id="001" x="257" y="191" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 funcionando to Carga sem problema" source="M1 funcionando" target="Carga sem problema">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="181" y="71" curvePoint="false"/>
+<arcpath id="001" x="237" y="237" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 funcionando to Deu problema" source="M1 funcionando" target="Deu problema">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="172" y="71" curvePoint="false"/>
+<arcpath id="001" x="147" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 to Carga sem problema" source="M1" target="Carga sem problema">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="161" y="251" curvePoint="false"/>
+<arcpath id="001" x="232" y="247" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 to Coloca em espera" source="M1" target="Coloca em espera">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="159" y="244" curvePoint="false"/>
+<arcpath id="001" x="246" y="192" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 to Deu problema" source="M1" target="Deu problema">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="147" y="237" curvePoint="false"/>
+<arcpath id="001" x="147" y="192" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M2 to Carrega p2" source="M2" target="Carrega p2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="161" y="477" curvePoint="false"/>
+<arcpath id="001" x="261" y="482" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M3 finaliza o produto to Liberado para novo produto" source="M3 finaliza o produto" target="Liberado para novo produto">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="646" y="357" curvePoint="false"/>
+<arcpath id="001" x="747" y="357" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Novo produto to M1" source="Novo produto" target="M1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="912" y="342" curvePoint="false"/>
+<arcpath id="001" x="913" y="148" curvePoint="false"/>
+<arcpath id="002" x="73" y="148" curvePoint="false"/>
+<arcpath id="003" x="73" y="253" curvePoint="false"/>
+<arcpath id="004" x="132" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Novo produto to M2" source="Novo produto" target="M2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="912" y="372" curvePoint="false"/>
+<arcpath id="001" x="913" y="583" curvePoint="false"/>
+<arcpath id="002" x="148" y="583" curvePoint="false"/>
+<arcpath id="003" x="147" y="491" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P1 em espera to Colocar peça no buffer" source="P1 em espera" target="Colocar peça no buffer">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="483" y="39" curvePoint="false"/>
+<arcpath id="001" x="437" y="112" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P1 pronta to M3 finaliza o produto" source="P1 pronta" target="M3 finaliza o produto">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="565" y="318" curvePoint="false"/>
+<arcpath id="001" x="637" y="352" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P2 pronta to M3 finaliza o produto" source="P2 pronta" target="M3 finaliza o produto">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="564" y="408" curvePoint="false"/>
+<arcpath id="001" x="636" y="362" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Robo Livre to Carga do Buffer" source="Robo Livre" target="Carga do Buffer">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="115" y="350" curvePoint="false"/>
+<arcpath id="001" x="351" y="242" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Robo Livre to Carga sem problema" source="Robo Livre" target="Carga sem problema">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="113" y="347" curvePoint="false"/>
+<arcpath id="001" x="231" y="257" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Robo Livre to Carrega p2" source="Robo Livre" target="Carrega p2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="114" y="365" curvePoint="false"/>
+<arcpath id="001" x="262" y="472" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Robo to Descarga P1" source="Robo" target="Descarga P1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="326" y="352" curvePoint="false"/>
+<arcpath id="001" x="441" y="317" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Robo to Descarrega p2" source="Robo" target="Descarrega p2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="326" y="358" curvePoint="false"/>
+<arcpath id="001" x="442" y="367" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
